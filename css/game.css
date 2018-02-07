@@ -1,0 +1,15 @@
+body {
+  background-color: grey;
+}
+
+.center {
+  text-align: center;
+}
+
+.header {
+  padding: 2rem;
+}
+
+h1 {
+  margin-bottom: 4rem;
+}

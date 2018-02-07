@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Slap Object Game</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+	 crossorigin="anonymous">
+
+
+</head>
+
+<body>
+	<div class="container">
+		<div class="header">
+			<h1>Welcome to 187 Murder, Death, Kill!</h1>
+
+			<div class="row">
+				<div class="col-lg-12 center">
+
+					<div class="row">
+						<div class="col-lg-6 center">
+							<img src="https://media3.giphy.com/media/l46Ciz9gxiJNGM5YA/200.webp#120-grid1" alt="Slap Game Target">
+						</div>
+						<div class="col-lg-6">
+							<h2>
+								<span>Today's Victim is the Clown you currently see.
+									<!--<span id="nameDisplay">...</span>-->
+							</h2>
+							<h3>
+								<span>Time to bring the Pain!</h3>
+							<h5>
+								<span>Health:
+									<span id="healthDisplay">...</span>
+							</h5>
+							<h5>
+								<span>Hits:
+									<span id="hitCounter">...</span>
+							</h5>
+							<hr>
+							<button onclick="app.controllers.controller.reset()">Reset</button>
+							<hr>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+		<div class="row">
+			<div class="col-lg-12 .buttons">
+
+				<footer>
+					<span id="PlayerSkills">Attack moves!</p>
+					</span>
+					<button onclick="app.controllers.controller.fight('slap')">Slap</button>
+					<button onclick="app.controllers.controller.fight('punch')">Punch</button>
+					<button onclick="app.controllers.controller.fight('kick')">Kick</button>
+					<div>
+						<p>
+							<hr>
+							<span id="PlayerItems">Special moves!</p>
+						</span>
+						<button onclick="app.controllers.controller.upgrade('doubleSlap')">Double Slap</button>
+						<button onclick="app.controllers.controller.upgrade('upperPunch')">Upper Punch</button>
+						<button onclick="app.controllers.controller.upgrade('flyingKick')">Flying Kick</button>
+					</div>
+
+				</footer>
+			</div>
+			<div class="col-lg-3"></div>
+		</div>
+	</div>
+
+
+
+
+	<script src="app/service.js"></script>
+	<script src="app/controller.js"></script>
+	<script src="app/app.js"></script>
+
+</body>
+
+</html>
